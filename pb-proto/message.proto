@@ -1,0 +1,11 @@
+package message;
+
+
+message Test {
+	required string label = 1;
+	optional int32 type = 2 [default=77];
+	repeated int64 reps = 3;
+	required group Somebutton = 4 {
+		required string button = 5;
+	}
+}
